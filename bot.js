@@ -22,11 +22,15 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
-
 bot.on('ready', async () => {
   console.log(`${bot.user.username} is online!`);
+  console.log(`Bot started at ${Date()}`)
+  bot.user.setActivity("In Development!")
   //add uptime at some point
 });
+
+//Add join and leave messages at some point
+
 
 bot.on('message', async message => {
   if (message.author.bot) return;
