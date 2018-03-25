@@ -6,7 +6,7 @@ world of warcraft discord bot
 * mythic - highest mythic+ key for character
 * prog - a guilds current raid progress  
 * roster - current raid roster  
-* sched - current raid schedule  
+* sched - edits the raid schedule  
 * raiddays - shows the current guild raid schedule
 * commands - shows the current commands
 
