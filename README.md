@@ -7,6 +7,8 @@ world of warcraft discord bot
 * prog - a guilds current raid progress  
 * roster - current raid roster  
 * sched - current raid schedule  
+* raiddays - shows the current guild raid schedule
+* commands - shows the current commands
 
 ## Make your own version
 ```git clone git@github.com:Danex2/Garrosh.git```  

@@ -30,6 +30,16 @@ bot.on('ready', async () => {
 });
 
 //Add join and leave messages at some point
+bot.on("guildMemberAdd", member => {
+    let join = [`Lok'tar <@${member.user.id}>!`, `Welcome to the horde, <@${member.user.id}>`]
+    member.guild.channels.find("name", "general").send(join[Math.floor(Math.random()*join.length)]);
+
+});
+
+bot.on("guildMemberRemove", member => {
+  let leave = [`${member.user.username} was probably an alliance spy, hmph.`, `We have no room for weaklings like you, ${member.user.username}!`]
+  member.guild.channels.find("name", "general").send(leave[Math.floor(Math.random()*leave.length)]);
+});
 
 
 bot.on('message', async message => {
