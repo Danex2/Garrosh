@@ -3,9 +3,8 @@ const schedule = require("./../schedule.json");
 const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
-    let newActivity = args[0];
-    let newThing = args[1];
-    schedule[newActivity] = newThing
+    [day, ...args] = [...args];
+    schedule[day] = args
     fs.writeFile("./schedule.json", JSON.stringify(schedule), (err) => console.error);
 
 }
